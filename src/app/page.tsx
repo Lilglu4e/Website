@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
+import Link from 'next/link';
 
 export default function Home() {
 	const [darkMode, setDarkMode] = useState(true);
@@ -31,7 +32,7 @@ export default function Home() {
 					</nav>
 					<div className="text-center p-10 py-10">
 						<h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-							Kevin Garvey
+							Moe Sarraf
 						</h2>
 						<h3 className="text-2xl py-2 dark:text-white md:text-3xl">
 							Developer and designer.
@@ -41,8 +42,8 @@ export default function Home() {
 							needs. Join me down below and let's get cracking!`}
 						</p>
 						<div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-							<AiFillGithub />
-							<AiFillLinkedin />
+							<Link href={'https://github.com/Lilglu4e'}><AiFillGithub /></Link>
+							<Link href={'https://www.linkedin.com/in/mohammad-sarraf-3893a81b7/'}><AiFillLinkedin /></Link>
 						</div>
 					</div>
 				</section>
