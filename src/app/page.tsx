@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { BsFillMoonStarsFill, BsSun } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -20,10 +20,17 @@ export default function Home() {
 						<h1 className="font-burtons text-xl">Lilglu4e</h1>
 						<ul className="flex items-center">
 							<li>
-								<BsFillMoonStarsFill
-									onClick={() => setDarkMode(!darkMode)}
-									className=" cursor-pointer text-2xl"
-								/>
+								{darkMode ? (
+									<BsSun
+										onClick={() => setDarkMode(!darkMode)}
+										className=" cursor-pointer text-2xl"
+									/>
+								) : (
+									<BsFillMoonStarsFill
+										onClick={() => setDarkMode(!darkMode)}
+										className=" cursor-pointer text-2xl"
+									/>
+								)}
 							</li>
 							<li>
 								<a
@@ -43,8 +50,10 @@ export default function Home() {
 							Developer and designer.
 						</h3>
 						<p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-							{`Freelancer providing services for programming and design content
-							needs. Join me down below and let's get cracking!`}
+							{`I'm a computer science student passionate about Data Science, AI, 
+							and Full-Stack Development. I've crafted projects like a React mini-game 
+							and an NBA MVP prediction model, showcasing my skills in creating engaging 
+							user experiences and harnessing data-driven insights.`}
 						</p>
 						<div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
 							<Link href={'https://github.com/Lilglu4e'}><AiFillGithub /></Link>
