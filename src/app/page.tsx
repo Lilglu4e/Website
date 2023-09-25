@@ -83,8 +83,8 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center text-white shadow-lg p-10 rounded-xl my-10  dark:bg-gradient-to-r from-indigo-300 to-gray-600 flex-1">
-              <PiFrameCornersBold className={`w-16 h-16 text-white mx-auto`}/>
+            <div className="text-center text-white shadow-lg p-10 rounded-xl my-10  dark:bg-gradient-to-r from-gray-700 to-gray-800 flex-1">
+              <PiFrameCornersBold className={`w-16 h-16 text-teal-600 mx-auto`}/>
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 FrameWorks
               </h3>
@@ -99,9 +99,9 @@ export default function Home() {
               <p className="text-white py-1">Firebase</p>
               <p className="text-white py-1">Material-UI, Tailwind, BoootsTrap</p>
             </div>
-            <div className="text-center text-white shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r from-blue-900 to-gray-600 flex-1">
+            <div className="text-center text-white shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r from-gray-700 to-gray-800 flex-1">
               {/* <Image src={code} width={100} height={100} /> */}
-              <IoLibraryOutline className={`w-16 h-16 text-white mx-auto`}/>
+              <IoLibraryOutline className={`w-16 h-16 text-teal-600 mx-auto`}/>
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Libraries
               </h3>
@@ -116,8 +116,8 @@ export default function Home() {
               <p className="text-white py-1">sci-kitlearn, matplotlib</p>
               <p className="text-white py-1">matplotlib</p>
             </div>
-            <div className="text-center text-white shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r from-red-500 to-gray-600 flex-1">
-              <FaCode className={`w-16 h-16 text-white mx-auto`}/>
+            <div className="text-center text-white shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r from-gray-700 to-gray-800 flex-1">
+              <FaCode className={`w-16 h-16 text-teal-600 mx-auto`}/>
               <h3 className="text-lg font-medium pt-8 pb-2 ">Languages</h3>
               <p className="py-2">
                 ### ######  ###### # ####  # #####  ### # # # ## # # #
