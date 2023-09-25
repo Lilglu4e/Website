@@ -61,6 +61,73 @@ export default function Home() {
 						</div>
 					</div>
 				</section>
+				<section>
+					<div>
+						<h3 className="text-3xl py-1 dark:text-white ">Skills</h3>
+						<p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+							{/* Since the beginning of my journey as a freelance designer and
+							developer, I've done remote work for */}
+							#### ### ######## ### ####### ##### #### # #### ### #### ####
+							######## ##### #### ###### ### ## ###
+							<span className="text-teal-500"> ####### </span>
+							##### ### <span className="text-teal-500">##### </span>
+							#######  #### ### ##### ## # ##### ##### ##### ##### ##### ##### 
+							##### ##### ##### #####
+						</p>
+						<p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+							I offer from a wide range of services, including brand design,
+							programming and teaching.
+						</p>
+					</div>
+					<div className="lg:flex gap-10">
+						<div className="text-center text-white shadow-lg p-10 rounded-xl my-10  dark:bg-gradient-to-r from-indigo-300 to-gray-600 flex-1">
+							{/* <Image src={design} width={100} height={100} /> */}
+							<h3 className="text-lg font-medium pt-8 pb-2  ">
+								FrameWorks
+							</h3>
+							<p className="py-2">
+								### ######  ###### # ####  # #####  ### # # # ## # # # 
+								############
+							</p>
+							<h4 className="py-4 text-teal-300">#####</h4>
+							<p className="text-white py-1">React</p>
+							<p className="text-white py-1">Next.js</p>
+							<p className="text-white py-1">Figma</p>
+							<p className="text-white py-1">Firebase</p>
+							<p className="text-white py-1">Material-UI, Tailwind, BoootsTrap</p>
+						</div>
+						<div className="text-center text-white shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r from-blue-900 to-gray-600 flex-1">
+							{/* <Image src={code} width={100} height={100} /> */}
+							<h3 className="text-lg font-medium pt-8 pb-2 ">
+								Libraries
+							</h3>
+							<p className="py-2">
+								### ######  ###### # ####  # #####  ### # # # ## # # # 
+								############
+							</p>
+							<h4 className="py-4 text-teal-300">#####</h4>
+							<p className="text-white py-1">Pandas</p>
+							<p className="text-white py-1">NumPy</p>
+							<p className="text-white py-1">TensorFlow</p>
+							<p className="text-white py-1">sci-kitlearn, matplotlib</p>
+							<p className="text-white py-1">matplotlib</p>
+						</div>
+						<div className="text-center text-white shadow-lg p-10 rounded-xl my-10 dark:bg-gradient-to-r from-red-500 to-gray-600 flex-1">
+							{/* <Image src={consulting} width={100} height={100} /> */}
+							<h3 className="text-lg font-medium pt-8 pb-2 ">Languages</h3>
+							<p className="py-2">
+								### ######  ###### # ####  # #####  ### # # # ## # # # 
+								############
+							</p>
+							<h4 className="py-4 text-teal-300">##### </h4>
+							<p className="text-white py-1">C/C++</p>
+							<p className="text-white py-1">Python</p>
+							<p className="text-white py-1">SQL</p>
+							<p className="text-white py-1">HTML/CSS/JavaScript</p>
+							<p className="text-white py-1">Java</p>
+						</div>
+					</div>
+				</section>
 			</main>
 		</div>
 	);
