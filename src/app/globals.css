@@ -19,6 +19,9 @@ a {
 	box-sizing: border-box;
 }
 
+.yoo {
+	background-color: rgb(97, 130, 100);
+}
 @font-face {
 	font-family: "burtons";
 	src: url("../../public/Burtons.otf");
