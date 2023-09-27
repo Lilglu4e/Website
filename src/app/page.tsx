@@ -10,6 +10,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
 import web1 from '../../public/nexxt-tic.png'
+import web2 from '../../public/mvp.png';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -100,7 +101,7 @@ export default function Home() {
               <p className="dark:text-white py-1">Next.js</p>
               <p className="dark:text-white py-1">Figma</p>
               <p className="dark:text-white py-1">Firebase</p>
-              <p className="dark:text-white py-1">Material-UI, Tailwind, BoootsTrap</p>
+              <p className="dark:text-white py-1">Material-UI, Tailwind, BootsTrap</p>
             </div>
             <div className="text-center dark:text-white shadow-lg p-10 rounded-xl my-10 bg-gradient-to-t from-gray-300 to-gray-100 dark:bg-gradient-to-t dark:from-gray-700 dark:to-gray-800 flex-1">
               {/* <Image src={code} width={100} height={100} /> */}
@@ -176,18 +177,18 @@ export default function Home() {
               <Image
                 className="rounded-lg object-cover"
                 layout="responsive"
-                src={web1}
+                src={web2}
                 alt={``}
               />
               <div className='bg-gray-500 opacity-0 group-hover:opacity-100 absolute inset-x-0 top-0 p-4 transform translate-y-full transition-opacity duration-300'>
                 <div className='flex justify-between items-center'>
-                  <p className='text-white ml-3 mt-3'>Tic-Tac-Toe</p>
+                  <p className='text-white ml-3 mt-3'>Nba MVP prediction Model</p>
                 </div>
                 <div className='flex justify-between items-center pb-1'>
-                  <p className='text-white ml-3'>Next.js, React, HTML, JavaScript, CSS, Tailwind, Firebase</p>
+                  <p className='text-white ml-3'>Jupyter, Pandas, NumPy, matplotlib.pyplot, seaborn, sklearn</p>
                   <div className='flex items-center'>
-                    <Link href={'https://github.com/Lilglu4e/next_tic'}><AiFillGithub className='text-white mr-3 w-6 h-6' /></Link>
-                    <Link href={'https://lilglu4e-firebase.netlify.app/'}><SiNetlify className='text-white w-6 h-6 mr-3' /></Link>
+                    <Link href={'https://github.com/Lilglu4e/ML-model'}><AiFillGithub className='text-white mr-3 w-6 h-6' /></Link>
+                    {/* <Link href={'https://lilglu4e-firebase.netlify.app/'}><SiNetlify className='text-white w-6 h-6 mr-3' /></Link> */}
                   </div>
                 </div>
               </div>
