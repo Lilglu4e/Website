@@ -13,7 +13,10 @@ import web1 from '../../public/nexxt-tic.png'
 import web2 from '../../public/mvp.png';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-
+  const [isClicked, setClicked] = useState(false);
+  const handleClick = () => {
+    setClicked(!isClicked)
+  }
   return (
     <div className={` ${darkMode ? 'dark' : ''}`}>
       <Head>
@@ -27,7 +30,30 @@ export default function Home() {
             <h1 className="font-burtons text-xl">Lilglu4e</h1>
             <ul className="flex items-center">
               <li>
-                {darkMode ? (
+                <BsFillMoonStarsFill
+                  onClick={handleClick}
+                  className=" cursor-pointer text-2xl"
+                />
+                {isClicked ?
+                  (<ul className='absolute bg-gradient-to-t from-gray-300 to-gray-300 dark:bg-gradient-to-t dark:from-gray-700 dark:to-gray-800 rounded w-36 mt-5'>
+                    <li
+                      className='flex py-2 hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-50 px-2 rounded'
+                      onClick={() => setDarkMode(!darkMode)}
+                    >
+                      <BsSun className=" cursor-pointer text-2xl " />
+                      <p className='text-white pl-2'>Light</p>
+                    </li>
+                    <li
+                      className='flex py-2 hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-50 px-2 rounded'
+                      onClick={() => setDarkMode(!darkMode)}
+                    >
+                      <BsFillMoonStarsFill className=" cursor-pointer text-2xl" />
+                      <p className='text-white pl-2'>Dark</p>
+                    </li>
+                  </ul>) : (
+                    null
+                  )}
+                {/* {darkMode ? (
                   <BsSun
                     onClick={() => setDarkMode(!darkMode)}
                     className=" cursor-pointer text-2xl"
@@ -37,7 +63,7 @@ export default function Home() {
                     onClick={() => setDarkMode(!darkMode)}
                     className=" cursor-pointer text-2xl"
                   />
-                )}
+                )} */}
               </li>
               <li>
                 <a
