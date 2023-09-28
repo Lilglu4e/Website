@@ -13,10 +13,9 @@ import web1 from '../../public/nexxt-tic.png'
 import web2 from '../../public/mvp.png';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const [color, setColor] = useState(3)
+  const [color, setColor] = useState(1)
   const [isClicked, setClicked] = useState(false);
   const handleClick = () => {
-    setDarkMode(true)
     setClicked(!isClicked)
   }
   const handleColor = (e: any) => {
@@ -27,7 +26,7 @@ export default function Home() {
       "color": "light-gray",
       "bg": `bg-gray-200`,
       "text": `text-black`,
-      "card": "dark:bg-gradient-to-t dark:from-gray-700 dark:to-gray-800"
+      "card": "dark:bg-gradient-to-b dark:from-gray-100 dark:to-gray-300"
     },
     {
       "color": "orange",
@@ -70,7 +69,7 @@ export default function Home() {
       <main className={` bg-gray-200 px-10 ${darkMode ? colors[color].bg : ''} md:px-20 lg:px-40`}>
         <section className="min-h-screen">
           <nav className={`py-10 mb-12 flex justify-between ${darkMode ? colors[color].text : ''}`}>
-            <h1 className={`font-burtons text-xl `}>Lilglu4e</h1>
+            <h1 className={`font-burtons text-xl`}>Lilglu4e</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -83,7 +82,7 @@ export default function Home() {
                     <ul
                       className='absolute rounded mt-5 flex justify-between list-none bg-gray-500 flex-wrap px-2'
                     >
-                      <li onClick={() => setDarkMode(!darkMode)}>
+                      <li onClick={handleColor}>
                         <div className='bg-gray-200 rounded-full border-current w-8 h-8 flex items-center justify-center text-white m-1'>0</div>
                       </li>
                       <li onClick={handleColor}>
@@ -124,7 +123,7 @@ export default function Home() {
               Developer and designer.
             </h3>
             <p
-              className={`text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl`}            >
+              className={`text-md py-5 leading-8 text-gray-800 ${darkMode ? (colors[color].text):('')} max-w-xl mx-auto md:text-xl`}            >
               {`I'm a computer science student passionate about Data Science, AI, 
 							and Full-Stack Development. I've crafted projects like a React mini-game 
 							and an NBA MVP prediction model, showcasing my skills in creating engaging 
@@ -138,8 +137,8 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Skills</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <h3 className={`text-3xl py-1 ${darkMode ? (colors[color].text):('')} `}>Skills</h3>
+            <p className={`text-md py-2 leading-8 ${darkMode ? (colors[color].text):('')}`}>
               {/* Since the beginning of my journey as a freelance designer and
 							developer, I've done remote work for */}
               #### ### ######## ### ####### ##### #### # #### ### #### ####
@@ -149,13 +148,13 @@ export default function Home() {
               #######  #### ### ##### ## # ##### ##### ##### ##### ##### #####
               ##### ##### ##### #####
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className={`text-md py-2 leading-8 text-gray-800 ${darkMode ? (colors[color].text):('')}`}>
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className={`text-center ${darkMode ? colors[color].text : ('')} shadow-lg p-10 rounded-xl my-10 bg-gradient-to-t from-gray-300 to-gray-100 ${darkMode ? colors[color].card : ('')} flex-1`}>
+            <div className={`text-center ${darkMode ? colors[color].text : ('')} shadow-lg p-10 rounded-xl my-10  ${darkMode ? colors[color].card : ('')} flex-1`}>
               <PiFrameCornersBold className={`w-16 h-16 text-teal-600 mx-auto`} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 FrameWorks
@@ -171,7 +170,7 @@ export default function Home() {
               <p className="text-inherit py-1">Firebase</p>
               <p className="text-inherit py-1">Material-UI, Tailwind, BootsTrap</p>
             </div>
-            <div className={`text-center ${darkMode ? colors[color].text : ('')} shadow-lg p-10 rounded-xl my-10 bg-gradient-to-t from-gray-300 to-gray-100 ${darkMode ? colors[color].card : ('')} flex-1`}>
+            <div className={`text-center ${darkMode ? colors[color].text : ('')} shadow-lg p-10 rounded-xl my-10 ${darkMode ? colors[color].card : ('')}  flex-1`}>
               <IoLibraryOutline className={`w-16 h-16 text-teal-600 mx-auto`} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Libraries
@@ -187,7 +186,7 @@ export default function Home() {
               <p className="text-inherit py-1">sci-kitlearn, matplotlib</p>
               <p className="text-inherit py-1">matplotlib</p>
             </div>
-            <div className={`text-center ${darkMode ? colors[color].text : ('')} shadow-lg p-10 rounded-xl my-10 bg-gradient-to-t from-gray-300 to-gray-100 ${darkMode ? colors[color].card : ('')} flex-1`}>
+            <div className={`text-center ${darkMode ? colors[color].text : ('')} shadow-lg p-10 rounded-xl my-10 ${darkMode ? colors[color].card : ('')}  flex-1`}>
               <FaCode className={`w-16 h-16 text-teal-600 mx-auto`} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Languages</h3>
               <p className="py-2">
@@ -205,8 +204,8 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <h3 className={`text-3xl py-1 ${darkMode ? (colors[color].text):('')}`}>Portofolio</h3>
+            <p className={`text-md py-2 leading-8 text-gray-800 ${darkMode ? (colors[color].text):('')}`}>
               {`Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for`}
               <span className="text-teal-500"> agencies </span>
@@ -214,7 +213,7 @@ export default function Home() {
               {`and collaborated with talanted people to create digital products
               for both business and consumer use.`}
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className={`text-md py-2 leading-8 text-gray-800 ${darkMode ? (colors[color].text):('')}`}>
               {`I offer from a wide range of services, including brand design,
               programming and teaching.`}
             </p>
