@@ -13,7 +13,7 @@ import web1 from '../../public/nexxt-tic.png'
 import web2 from '../../public/mvp.png';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const [color, setColor] = useState(1)
+  const [color, setColor] = useState(3)
   const [isClicked, setClicked] = useState(false);
   const handleClick = () => {
     setClicked(!isClicked)
