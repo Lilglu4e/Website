@@ -108,7 +108,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href="https://www.linkedin.com/ambry/?x-li-ambry-ep=AQI9QtglMchyDAAAAYruv5tUbCgbE1tQ13i6m6ayLQPZUMDmo8x6YWMLHr0Y9lg7gKDoLSfFTfRJlVmmEv21r45JKNNiMYGaf9B8lbpMUN5SOlZq6v2S3MNNlAbj6ufjJXfr4px62PHnVXFso-yzwTFN0RBSNZKRKsqCDonJFb584UvH0zTajc8sDDLRK6AmF8SRXTVQnIYVBkaOTmwpBfm_9P1oBUoHsidHXNjGAr4HDNLZMdYb63R4IE8bB9YWuYSMyd2DR7cznKPz_iO758odftIgbeaLT2Ui5oeKaie5s7JBP_dqIxyxZsDqe37XbRLbtG6Ys9q3FYEHlbH8n2WXhLIgGgkmNrYFPQKTudRZBMK-JyQD7S1MkJX9Nth5FUUvo-O8FjTHQMsC13LOQio8a39Igwn7eMP6MB34xsawckK4bBcrBuwvRjnW24fs5ONJOjzJkMgaNGSRrwsySNidy1xCGlku7xClU39fS317FxRbc7QkcetJPbqb7I9lnLLA-wDSbaPP39mkwf479AhOHuB25gqdG8w10oQA19tdaloMZDKMzST6qMtuFd-O8UOdRA"
                 >
                   Resume
                 </a>
