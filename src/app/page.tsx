@@ -207,10 +207,7 @@ Proficient in multiple programming languages, enabling versatility across variou
               projects reflect not just my technical acumen but also my passion for blending creativity 
               with functionality, offering a glimpse into my journey 
               of continuous learning and innovation in the ever-evolving tech landscape.`}
-              <span className="text-teal-500"> agencies </span>
-              {`consulted for`} <span className="text-teal-500">startups </span>
-              {`and collaborated with talanted people to create digital products
-              for both business and consumer use.`}
+
             </p>
 
           </div>
