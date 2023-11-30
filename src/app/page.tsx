@@ -124,10 +124,7 @@ export default function Home() {
             </h3>
             <p
               className={`text-md py-5 leading-8 text-gray-800 ${darkMode ? (colors[color].text):('')} max-w-xl mx-auto md:text-xl`}            >
-              {`I'm a computer science student passionate about Data Science, AI, 
-							and Full-Stack Development. I've crafted projects like a React mini-game 
-							and an NBA MVP prediction model, showcasing my skills in creating engaging 
-							user experiences and harnessing data-driven insights.`}
+              {`As a Computer Science student deeply engaged with Data Science, AI, and Full-Stack Development, I am driven by a passion to blend creativity and technology. My portfolio, featuring diverse projects such as an interactive React mini-game and an innovative NBA MVP prediction model, is a testament to my commitment to crafting engaging user experiences and leveraging the power of data-driven insights.`}
             </p>
             <div className={`text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400`}>
               <Link href={'https://github.com/Lilglu4e'}><AiFillGithub /></Link>
@@ -141,17 +138,15 @@ export default function Home() {
             <p className={`text-md py-2 leading-8 ${darkMode ? (colors[color].text):('')}`}>
               {/* Since the beginning of my journey as a freelance designer and
 							developer, I've done remote work for */}
-              #### ### ######## ### ####### ##### #### # #### ### #### ####
-              ######## ##### #### ###### ### ## ###
-              <span className="text-teal-500"> ####### </span>
-              ##### ### <span className="text-teal-500">##### </span>
-              #######  #### ### ##### ## # ##### ##### ##### ##### ##### #####
-              ##### ##### ##### #####
+              I bring a diverse skill set to the table, encompassing 
+              <span className="text-teal-500"> brand design </span>, <span className="text-teal-500"> programming </span>, 
+              and <span className="text-teal-500"> education </span>. My expertise lies not only in creating visually appealing designs 
+              and efficient code but also in imparting this knowledge through teaching.
             </p>
-            <p className={`text-md py-2 leading-8 text-gray-800 ${darkMode ? (colors[color].text):('')}`}>
+            {/* <p className={`text-md py-2 leading-8 text-gray-800 ${darkMode ? (colors[color].text):('')}`}>
               I offer from a wide range of services, including brand design,
               programming and teaching.
-            </p>
+            </p> */}
           </div>
           <div className="lg:flex gap-10">
             <div className={`text-center ${darkMode ? colors[color].text : ('')} shadow-lg p-10 rounded-xl my-10  ${darkMode ? colors[color].card : ('')} flex-1`}>
@@ -160,10 +155,9 @@ export default function Home() {
                 FrameWorks
               </h3>
               <p className="py-2">
-                ### ######  ###### # ####  # #####  ### # # # ## # # #
-                ############
+My technical proficiency is anchored in a variety of frameworks that enhance the development process
               </p>
-              <h4 className="text-teal-300 py-4">#####</h4>
+              {/* <h4 className="text-teal-300 py-4">#####</h4> */}
               <p className="text-inherit py-1">React</p>
               <p className="text-inherit py-1">Next.js</p>
               <p className="text-inherit py-1">Figma</p>
@@ -176,10 +170,9 @@ export default function Home() {
                 Libraries
               </h3>
               <p className="py-2">
-                ### ######  ###### # ####  # #####  ### # # # ## # # #
-                ############
+I leverage powerful libraries to process data, create machine learning models, and visualize results
               </p>
-              <h4 className="text-teal-300 py-4">#####</h4>
+              {/* <h4 className="text-teal-300 py-4">#####</h4> */}
               <p className="text-inherit py-1">Pandas</p>
               <p className="text-inherit py-1">NumPy</p>
               <p className="text-inherit py-1">TensorFlow</p>
@@ -188,17 +181,16 @@ export default function Home() {
             </div>
             <div className={`text-center ${darkMode ? colors[color].text : ('')} shadow-lg p-10 rounded-xl my-10 ${darkMode ? colors[color].card : ('')}  flex-1`}>
               <FaCode className={`w-16 h-16 text-teal-600 mx-auto`} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Languages</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Programming Languages</h3>
               <p className="py-2">
-                ### ######  ###### # ####  # #####  ### # # # ## # # #
-                ############
+Proficient in multiple programming languages, enabling versatility across various projects
               </p>
-              <h4 className="text-teal-300 py-4">##### </h4>
+              {/* <h4 className="text-teal-300 py-4">##### </h4> */}
               <p className="text-inherit py-1">C/C++</p>
               <p className="text-inherit py-1">Python</p>
               <p className="text-inherit py-1">SQL</p>
-              <p className="text-inherit py-1">HTML/CSS/JavaScript</p>
               <p className="text-inherit py-1">Java</p>
+              <p className="text-inherit py-1">HTML/CSS/JavaScript</p>
             </div>
           </div>
         </section>
@@ -206,17 +198,21 @@ export default function Home() {
           <div>
             <h3 className={`text-3xl py-1 ${darkMode ? (colors[color].text):('')}`}>Portofolio</h3>
             <p className={`text-md py-2 leading-8 text-gray-800 ${darkMode ? (colors[color].text):('')}`}>
-              {`Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for`}
+              {`As a dedicated Computer Science student at Wilfrid Laurier University and an 
+              experienced IT Systems and Automation Specialist at Caseware, I, Moe Sarraf, have 
+              developed a unique blend of skills in Data Science, AI, and Full-Stack Development. 
+              My portfolio showcases diverse projects, such as an NBA MVP prediction model where 
+              I harnessed data analytics and machine learning, and a React-based mini-game that 
+              demonstrates my proficiency in creating dynamic, user-focused applications. These 
+              projects reflect not just my technical acumen but also my passion for blending creativity 
+              with functionality, offering a glimpse into my journey 
+              of continuous learning and innovation in the ever-evolving tech landscape.`}
               <span className="text-teal-500"> agencies </span>
               {`consulted for`} <span className="text-teal-500">startups </span>
               {`and collaborated with talanted people to create digital products
               for both business and consumer use.`}
             </p>
-            <p className={`text-md py-2 leading-8 text-gray-800 ${darkMode ? (colors[color].text):('')}`}>
-              {`I offer from a wide range of services, including brand design,
-              programming and teaching.`}
-            </p>
+
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 relative group">
